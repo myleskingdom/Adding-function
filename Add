@@ -1,0 +1,19 @@
+add():
+try:
+  number1 = int(input("enter number one: "))
+  number2 = int(input("enter number two: "))
+  result = number1 + number2
+except ZeroDivisionError as e:
+  print(e)
+  print("Don't divide by 0")
+except ValueError as e:
+  print(e)
+  print("enter a number please")
+except Exception as e:
+  print(e)
+  print("something went wrong :(")
+else:
+  print(result)
+finally:
+  print("")
+add()
